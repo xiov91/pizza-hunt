@@ -15,7 +15,7 @@ app.use(require('./routes'));
 // If the environment variable MONGODB_URI exists, like on Heroku when we deploy later, it'll use that
 // Otherwise it'll short-circuit to the local MongoDB server's database
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/pizza-hunt', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Pizza-Hunt', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
